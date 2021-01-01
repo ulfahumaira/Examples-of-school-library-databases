@@ -3,6 +3,8 @@ CREATE TABLE Denda(
 	ID_Siswa int NOT NULL,
 	ID_Peminjam int NOT NULL
 	Biaya_Denda int NOT NULL,
+	Bayar boolean,
 	PRIMARY KEY (ID),
-	FOREIGN KEY (ID_Siswa) REFERENCES Siswa(ID)
+	FOREIGN KEY (ID_Siswa) REFERENCES Siswa(ID),
+	FOREIGN KEY (ID_Peminjan) REFERENCES Peminjam_buku(ID)
 	);
